@@ -103,3 +103,13 @@ p {
 .inactive {
     color: #383141;
 }
+
+#error_img {
+    width: 720px;
+}
+
+@media screen and (max-width: 600px) {
+    #error_img {
+        width: 320px;
+    }
+}
