@@ -108,8 +108,13 @@ p {
     width: 720px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     #error_img {
         width: 320px;
     }
+}
+
+.logo {
+    width: 40px;
+    border-radius: 50px;
 }
