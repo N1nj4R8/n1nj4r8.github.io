@@ -52,6 +52,10 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+}
+
 .btn {
     margin: 50px;
     font-size: 20px;
@@ -88,6 +92,17 @@ h1 {
     text-align: center;
     border-radius: 20px;
     padding: 10px;
+}
+
+.sub-content {
+    width: 600px;
+    background-color: var(--primary);
+    margin: 20px auto;
+    height: max-content;
+    text-align: justify;
+    font-size: medium;
+    border-radius: 14px;
+    padding: 5px;
 }
 
 .list {
