@@ -95,7 +95,7 @@ h2 {
 }
 
 .sub-content {
-    width: 600px;
+    width: 60%;
     background-color: var(--primary);
     margin: 20px auto;
     height: max-content;
