@@ -11,39 +11,60 @@
     </head>
 
     <body>
-        <nav class="navbar">
-            <div><img class="logo" src="../static/images/logo.png" alt="A samurai within a purple circle"></div>
+        <nav class="navbar desktop">
+            <div>
+                <img class="logo" src="../static/images/logo.png" alt="A samurai within a purple circle">
             </div>
-            <div class="navmenu">
+            <div>
                 <a href="/">Home</a>
+                <a href="/#skills">Skills</a>
+                <a href="/#contact">Contact</a>
                 <a href="/projects/">Projects</a>
             </div>
         </nav>
-        <br>
+        <nav class="navbar mobile">
+            <div><img class="logo" src="../static/images/logo.png" alt="A samurai within a purple circle"></div>
+            <div class="links">
+                <a href="/">Home</a>
+                <a href="/#skills">Skills</a>
+                <a href="/#contact">Contact</a>
+                <a href="/projects/">Projects</a>
+            </div>
+            <a href="javascript:void(0);" class="btn-menu" onclick="menu()">☰</a>
+        </nav>
+
         <div class="content">
             <div class="sub-content">
                 <h2><a href="https://github.com/N1nj4R8/CRYPT">CRYPT</a></h2>
                 An Encryption / Decryption Tool.
-                <p>This tool supports a lot of hashes and ciphers. Also, You can attempt to brute-force hashes.</p>
+                <p>
+                    You can use this tool to Encode/Decode or Hash text messages.
+                    Also it support cracking hashes and cyphers. <br>
+                    When you download the source, it also comes with a bulk encoder/decoder which you may use on text
+                    files.
+                </p>
             </div>
             <br>
             <div class="sub-content">
                 <h2><a href="https://github.com/N1nj4R8/ImageViewer">Image Viewer</a></h2>
                 Simple Image Viewer.
-                <p>It is created using pyside2 and must be run from terminal.</p>
+                <p>
+                    It's more like an exercise for writing GUI applications. Its pretty simple and you should run it via
+                    a terminal.
+                </p>
             </div>
             <br>
             <div class="sub-content">
                 <h2><a href="https://github.com/N1nj4R8/Bot-NotSafeForWork">NSFW</a></h2>
                 A Telegram bot.
-                <p>You can get random NSFW images from it. You may specify a category too. Due to running it on a free
-                    web host service, it has a very small image database.</p>
+                <p>
+                    You can get random NSFW images from it, as the name suggests. Since I'm using a free web host, the
+                    bot now has a very small (about 500 Mb) database of images. Images from <a href="https://github.com/d00ML0rDz/nsfw-image-urls">this</a> repository.
+                </p>
             </div>
         </div>
-        <footer class="footer">
-            Copyright © 2023 Ninja Left <br>
-            You can view the source code at <a href="https://github.com/N1nj4R8/n1nj4r8.github.io">Github</a>
-        </footer>
+
+        <script src="../static/script.js"></script>
     </body>
 
 </html>

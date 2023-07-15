@@ -11,13 +11,26 @@
     </head>
 
     <body>
-        <nav class="navbar">
+        <nav class="navbar desktop">
             <div>
-                <img class="logo" src="./static/images/logo.png" alt="A samurai with in a purple circle"></div>
-            <div class="navmenu">
-                <a href="/">Home</a>
-                <a href="/projects">Projects</a>
+                <img class="logo" src="./static/images/logo.png" alt="A samurai within a purple circle">
             </div>
+            <div>
+                <a href="/">Home</a>
+                <a href="/#skills">Skills</a>
+                <a href="/#contact">Contact</a>
+                <a href="/projects/">Projects</a>
+            </div>
+        </nav>
+        <nav class="navbar mobile">
+            <div><img class="logo" src="./static/images/logo.png" alt="A samurai within a purple circle"></div>
+            <div class="links">
+                <a href="/">Home</a>
+                <a href="/#skills">Skills</a>
+                <a href="/#contact">Contact</a>
+                <a href="/projects/">Projects</a>
+            </div>
+            <a href="javascript:void(0);" class="btn-menu" onclick="menu()">☰</a>
         </nav>
         <br>
         <div class="error">
@@ -31,10 +44,6 @@
             Please check the URL. <br>
             <button class="btn" onclick="goHome();">Back to home</button>
         </div>
-        <footer class="footer">
-            Copyright © 2023 Ninja Left <br>
-            You can view the source code at <a href="https://github.com/N1nj4R8/n1nj4r8.github.io">Github</a>
-        </footer>
 
         <script src="./static/script.js"></script>
     </body>

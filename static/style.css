@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
 html {
     --background: #121212;
     --primary: #383141;
@@ -16,32 +18,50 @@ html {
 }
 
 body {
-    font-family: 'Fira Code medium', 'Courier New', Courier, monospace;
+    font-family: 'Fira Code', Courier, monospace;
     background-color: var(--background);
     text-align: center;
     color: var(--text);
-    font-size: 20px;
+    font-size: 17px;
 }
 
-.footer, .navbar {
+
+.navbar {
     width: 100%;
     color: var(--text);
     padding: 20px;
-}
-
-.navbar {
-    display: flex;
+    height: 70px;
     align-items: center;
     justify-content: space-between;
     background-color: var(--primary);
 }
 
-.footer {
-    margin-top: 30px;
-    background-color: var(--surface);
-    bottom: 0;
-    position: absolute;
-    font-size: x-small;
+.desktop {
+    display: flex;
+}
+
+.mobile {
+    display: none;
+}
+
+.links {
+    display: none;
+    background-color: var(--background);
+    width: 80%;
+    padding: 20px;
+}
+
+.links a {
+    display: block;
+    text-align: center;
+}
+
+.btn-menu {
+    background-color: var(--background);
+    color: var(--buttons);
+    padding: 10px;
+    border-radius: 15px;
+    user-select: none;
 }
 
 a {
@@ -53,7 +73,8 @@ a:visited {
     color: var(--link-visited);
 }
 
-a:hover {
+a:hover,
+.btn-menu:hover {
     transition: all 200ms linear;
     filter: invert(1);
 }
@@ -65,12 +86,13 @@ h1 {
 }
 
 h2 {
+    margin: 20px;
     text-align: center;
 }
 
 .btn {
     margin: 50px;
-    font-size: 20px;
+    font-size: 17px;
     background-color: var(--buttons);
     color: var(--surface);
     width: max-content;
@@ -96,23 +118,24 @@ h2 {
 }
 
 .content {
-    width: 65%;
+    width: 85%;
     height: max-content;
     background-color: var(--surface);
     color: var(--text);
     margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
     text-align: center;
     border-radius: 20px;
-    padding: 10px;
+    padding: 30px;
 }
 
 .sub-content {
-    width: 60%;
+    width: 80%;
     background-color: var(--primary);
     margin: 20px auto;
     height: max-content;
     text-align: justify;
-    font-size: medium;
     border-radius: 14px;
     padding: 5px;
 }
@@ -127,7 +150,8 @@ p {
     text-align: justify;
 }
 
-.inactive {
+.inactive,
+.inactive:visited {
     color: #383141;
 }
 
@@ -136,23 +160,26 @@ p {
     width: 720px;
 }
 
-@media screen and (max-width: 800px) {
+.logo {
+    width: 40px;
+    border-radius: 50px;
+}
+
+@media only screen and (max-width: 760px) {
     #error_img {
         height: 120px;
         width: 320px;
     }
-    .content {
-        width: 85%;
-    }
-    .sub-content {
-        width: 80%;
-    }
-    .footer {
-        margin-top: 40px;
-    }
-}
 
-.logo {
-    width: 40px;
-    border-radius: 50px;
+    .mobile {
+        display: flex;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    body {
+        font-size: smaller;
+    }
 }

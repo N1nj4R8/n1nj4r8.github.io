@@ -11,15 +11,28 @@
     </head>
 
     <body>
-        <nav class="navbar">
-            <div><img class="logo" src="./static/images/logo.png" alt="A samurai within a purple circle"></div>
+        <nav class="navbar desktop">
+            <div>
+                <img class="logo" src="./static/images/logo.png" alt="A samurai within a purple circle">
             </div>
-            <div class="navmenu">
+            <div>
                 <a href="/">Home</a>
+                <a href="/#skills">Skills</a>
+                <a href="/#contact">Contact</a>
                 <a href="/projects/">Projects</a>
             </div>
         </nav>
-        <br>
+        <nav class="navbar mobile">
+            <div><img class="logo" src="./static/images/logo.png" alt="A samurai within a purple circle"></div>
+            <div class="links">
+                <a href="/">Home</a>
+                <a href="/#skills">Skills</a>
+                <a href="/#contact">Contact</a>
+                <a href="/projects/">Projects</a>
+            </div>
+            <a href="javascript:void(0);" class="btn-menu" onclick="menu()">☰</a>
+        </nav>
+
         <div class="content">
             <h1>Hi there!</h1>
             <p>
@@ -27,27 +40,33 @@
                 I enjoy learning new stuff specially if they are technology related.
                 I like programming, cryptography, penetration testing and among all of them, linux. <br> <br>
             </p>
-            I can create programs and read code in:
-            <ul class="list">
-                <li><img src="./static/images/python.png" width="22px"><a href="https://python.org">Python</a></li>
-                <li><img src="./static/images/js.png" width="22px"><a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/">Javascript</a></li>
-                <li><img src="./static/php.png" width="32px"><a href="https://php.net">PHP</a></li>
-                <li><img src="./static/images/bash.png" width="25px"><a
-                        href="https://www.gnu.org/software/bash/">Bash</a></li>
-                <li><span class="inactive">Go*</span></li>
-                <li><span class="inactive">C*</span></li>
-                *To be learned in near future.
-            </ul> <br>
+        </div>
+
+        <div class="content">
+            <h2 id="skills">Skills</h2>
             <p>
-                Other than that, I can use GNU/Linux and am confident with linux terminal.
-                I also have some experience with SQL. <br>
-                You can view my projects using the link in navigation bar or visiting my github page.
+                The main language I use is <a href="https://python.org" target="_blank">Python</a> and I create most of
+                my programs in Python but I can code in <a
+                    href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/"
+                    target="_blank">Javascript</a>, <a href="https://php.net" target="_blank">PHP</a> and <a href=""
+                    target="_blank">Shell</a> too. I'm also learning to program in <a href="https://go.dev">Golang</a>
+                and <a href="">C</a>.
+            </p>
+            <p>
+                Other than that, I'm pretty familiar with GNU/Linux and I can use the terminal with ease. <br>
+                I also have some experience with SQL and know network basics.
+            </p>
+            <p>
+                You can view my projects using the navigation bar or visiting my github page.
             </p>
         </div>
-        <footer class="footer">
-            Copyright © 2023 Ninja Left <br>
-            You can view the source code at <a href="https://github.com/N1nj4R8/n1nj4r8.github.io">Github</a>
-        </footer>
+
+        <div class="content">
+            <h2 id="contact">Contact</h2>
+            If you have any questions, you may contact me via <a href="mailto://n1nj4r8@dnmx.org">Email</a> or <a
+                href="https://t.me/L1brty">Telegram</a>
+        </div>
+        <script src="./static/script.js"></script>
     </body>
 
 </html>
