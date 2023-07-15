@@ -1,3 +1,3 @@
 function goHome() {
-    document.location.replace("/");
+    document.location.href = "/";
 }
