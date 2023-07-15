@@ -23,13 +23,25 @@ body {
     font-size: 20px;
 }
 
+.footer, .navbar {
+    width: 100%;
+    color: var(--text);
+    padding: 20px;
+}
+
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
     background-color: var(--primary);
-    color: var(--text);
+}
+
+.footer {
+    margin-top: 30px;
+    background-color: var(--surface);
+    bottom: 0;
+    position: absolute;
+    font-size: x-small;
 }
 
 a {
@@ -84,7 +96,7 @@ h2 {
 }
 
 .content {
-    width: 85%;
+    width: 65%;
     height: max-content;
     background-color: var(--surface);
     color: var(--text);
@@ -95,7 +107,7 @@ h2 {
 }
 
 .sub-content {
-    width: 80%;
+    width: 60%;
     background-color: var(--primary);
     margin: 20px auto;
     height: max-content;
@@ -120,12 +132,23 @@ p {
 }
 
 #error_img {
+    height: 220px;
     width: 720px;
 }
 
 @media screen and (max-width: 800px) {
     #error_img {
+        height: 120px;
         width: 320px;
+    }
+    .content {
+        width: 85%;
+    }
+    .sub-content {
+        width: 80%;
+    }
+    .footer {
+        margin-top: 40px;
     }
 }
 
